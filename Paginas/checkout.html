@@ -15,32 +15,47 @@
   <main>
     <h1>Comando <code class="h1-code">git checkout</code></h1>
 
-    <p>O comando <span class="cmd">git checkout</span> é usado principalmente para trocar de branch ou restaurar arquivos em versões anteriores.</p>
-
-    <h2>🔁 Trocar de branch</h2>
-    <pre><code>git checkout nome-da-branch</code></pre>
-    <p>Você muda para a branch especificada. Exemplo:</p>
-    <pre><code>git checkout desenvolvimento</code></pre>
+    <h4 class="subtitle">O comando <span class="cmd">git checkout</span> é usado principalmente para trocar de branch ou restaurar arquivos em versões anteriores.</h4 class="subtitle">
+  
 
     <h2>🌱 Criar e trocar para uma nova branch</h2>
-    <p>Você pode criar e já entrar nela com o comando:</p>
-    <pre><code>git checkout -b nova-branch</code></pre>
+    <pre>Você pode criar e já entrar nela com o comando:</pre>
+    <div class="code-box">
+  <button class="copy-btn">📋 Copiar</button>
+    <p>git checkout -b nova-branch</p>
+    </div>
+    
+    <h2>🔁 Trocar de branch</h2>
+    <div class="code-box">
+  <button class="copy-btn">📋 Copiar</button>
+    <p><span>git checkout nome-da-branch</span></p>
+    </div>
+
+    <pre>Você muda para a branch especificada. Exemplo:</pre>
+    <div class="code-box">
+  <button class="copy-btn">📋 Copiar</button>
+    <p>git checkout nome_da_branch</p>
+    </div>
 
     <h2>⏪ Restaurar arquivo específico</h2>
-    <p>Restaura um arquivo para a última versão confirmada (commit):</p>
-    <pre><code>git checkout -- caminho/do/arquivo</code></pre>
-    <p><strong>Atenção:</strong> Isso apaga mudanças locais nesse arquivo!</p>
+    <pre>Restaura um arquivo para a última versão confirmada (commit):</pre>
+    <div class="code-box">
+  <button class="copy-btn">📋 Copiar</button>
+    <p><span>git checkout -- caminho/do/arquivo</span></p>
+    </div>
+    <p style="border: 0.5px solid rgb(255, 0, 0); background: none ;color: #ffffff;"><strong>⚠️Atenção:</strong> Isso apaga mudanças locais nesse arquivo!</p>
 
     <h2>📌 Alternativa moderna</h2>
-    <p>Hoje, o Git recomenda o uso de:</p>
+    <pre style="color: white; font-style: normal;">Hoje, o Git recomenda o uso de:</pre>
+
     <ul>
-      <li><code>git switch nome-da-branch</code> → para trocar de branch</li>
-      <li><code>git restore arquivo</code> → para restaurar arquivo</li>
+      <li><code class="code">git switch nome-da-branch</code> → para trocar de branch</li>
+      <li><code class="code">git restore arquivo</code> → para restaurar arquivo</li>
     </ul>
 
     <h2>⚠️ Dicas importantes</h2>
     <ul>
-      <li>Salve seu trabalho antes de trocar de branch com <code>git add</code> e <code>git commit</code>.</li>
+      <li>Salve seu trabalho antes de trocar de branch com <code class="code">git add</code> e <code class="code">git commit</code>.</li>
       <li>Evite trocar de branch com arquivos modificados não salvos.</li>
     </ul>
 

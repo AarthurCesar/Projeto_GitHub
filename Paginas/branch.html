@@ -13,44 +13,64 @@
   <a href="../index.html" class="voltar">← Voltar ao guia principal</a>
 
   <main>
-    <h1>Comando <code class="h1-code">git branch</code></h1>
+    
+   <h1>Comando <code class="h1-code">git branch</code></h1>
 
-    <p>O comando <span class="cmd">git branch</span> serve para gerenciar diferentes ramos (branches) dentro de um repositório Git. Ele permite criar, listar e excluir branches.</p>
+<h4 class="subtitle">O comando <span class="cmd">git branch</span> serve para gerenciar diferentes ramos (branches) dentro de um repositório Git. Ele permite criar, listar e excluir branches.</h4 class="subtitle">
 
-    <h2>📄 Ver todas as branches</h2>
-    <pre><code>git branch</code></pre>
-    <p>Mostra uma lista das branches locais. A branch atual estará com um asterisco <code>*</code>.</p>
+<h2>📄 Ver todas as branches</h2>
+<pre><code>Mostra uma lista das branches locais. A branch atual estará com um asterisco *.</code></pre>
+<div class="code-box">
+  <button class="copy-btn">📋 Copiar</button>
+  <p>git branch</p>
+</div>
 
-    <h2>🌱 Criar uma nova branch</h2>
-    <pre><code>git branch nome-da-branch</code></pre>
-    <p>Cria uma nova branch, mas você ainda continuará na branch atual.</p>
+<h2>🌱 Criar uma nova branch</h2>
+<pre><code>Cria uma nova branch, mas você ainda continuará na branch atual.</code></pre>
+<div class="code-box">
+  <button class="copy-btn">📋 Copiar</button>
+  <p>git branch nome-da-branch</p>
+</div>
 
-    <h2>🔄 Trocar de branch</h2>
-    <p>Use <code>git checkout</code> ou o atalho moderno:</p>
-    <pre><code>git switch nome-da-branch</code></pre>
+<h2>🔄 Trocar de branch</h2>
+<pre><code>Use git checkout ou o atalho moderno:</code></pre>
+<div class="code-box">
+  <button class="copy-btn">📋 Copiar</button>
+  <p>git switch nome-da-branch</p>
+</div>
 
-    <h2>🔥 Excluir uma branch</h2>
-    <pre><code>git branch -d nome-da-branch</code></pre>
-    <p>Exclui uma branch que já foi mesclada. Se não foi, e quiser forçar:</p>
-    <pre><code>git branch -D nome-da-branch</code></pre>
+<h2>🔥 Excluir uma branch</h2>
+<div class="code-box">
+  <button class="copy-btn">📋 Copiar</button>
+  <p>git branch -d nome-da-branch</p>
+</div>
+<pre><code>Exclui uma branch que já foi mesclada. Se não foi, e quiser forçar:</code></pre>
+<div class="code-box">
+  <button class="copy-btn">📋 Copiar</button>
+  <p>git branch -D nome-da-branch</p>
+</div>
 
-    <h2>🌍 Branch remota</h2>
-    <p>Para ver branches remotas:</p>
-    <pre><code>git branch -r</code></pre>
+<h2>🌍 Branch remota</h2>
+<pre>Para ver branches remotas:</pre>
+<div class="code-box">
+  <button class="copy-btn">📋 Copiar</button>
+  <p>git branch -r</p>
+</div>
 
-    <h2>🧠 Dica: Branch vs Checkout</h2>
-    <ul>
-      <li><strong>git branch</strong> → cria ou lista branches</li>
-      <li><strong>git checkout</strong> ou <strong>git switch</strong> → muda para outra branch</li>
-    </ul>
+<h2>🧠 Dica: Branch vs Checkout</h2>
+<ul>
+  <li><strong>git branch</strong> → cria ou lista branches</li>
+  <li><strong>git checkout</strong> ou <strong>git switch</strong> → muda para outra branch</li>
+</ul>
 
-    <h2>⚠️ Boas práticas</h2>
-    <ul>
-      <li>Dê nomes descritivos para as branches, como <code>correcao-login</code> ou <code>nova-feature</code>.</li>
-      <li>Antes de criar uma branch, atualize sua branch atual com <code>git pull</code>.</li>
-    </ul>
+<h2>⚠️ Boas práticas</h2>
+<ul>
+  <li>Dê nomes descritivos para as branches, como <code>correcao-login</code> ou <code>nova-feature</code>.</li>
+  <li>Antes de criar uma branch, atualize sua branch atual com <code>git pull</code>.</li>
+</ul>
 
   </main>
 
 </body>
+<script src="../script.js"></script>
 </html>

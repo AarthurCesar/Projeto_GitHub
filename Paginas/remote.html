@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Git Remote</title>
   <link rel="stylesheet" href="../style.css" />
-    <link rel="shortcut icon" href="flat-design-icon-showing-the-relationshi_Nu5wgfvMSIC_oN5zNbm25A_eKIrFBj1RYGSdt6Syy6n3w-removebg-preview.png" type="image/x-icon">
-
+  <link rel="shortcut icon" href="flat-design-icon-showing-the-relationshi_Nu5wgfvMSIC_oN5zNbm25A_eKIrFBj1RYGSdt6Syy6n3w-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
 
@@ -14,31 +13,44 @@
 
   <main>
     <h1>Comando <code class="h1-code">git remote</code></h1>
-
-    <p>O comando <code>git remote</code> é usado para conectar o repositório local a um repositório remoto, como o GitHub. Ele também pode ser usado para listar, renomear ou remover conexões remotas.</p>
+    
+    <h4 class="subtitle">O comando <code>git remote</code> é usado para conectar o repositório local a um repositório remoto, como o GitHub. Ele também pode ser usado para listar, renomear ou remover conexões remotas.</h4>
 
     <h2>🔗 Adicionar um repositório remoto</h2>
     <h4>Para conectar seu projeto local ao GitHub:</h4>
-    <p>git remote add origin https://github.com/usuario/nome-do-repositorio.git</p>
-
+    <div class="code-box">
+      <button class="copy-btn">📋 Copiar</button>
+      <p>git remote add origin https://github.com/usuario/nome-do-repositorio.git</p>
+    </div>
     <ul>
       <li><strong>origin</strong> → nome padrão do repositório remoto</li>
       <li><strong>URL</strong> → link HTTPS ou SSH do seu repositório no GitHub</li>
     </ul>
 
     <h2>📋 Verificar repositórios remotos conectados</h2>
-    <pre><code>git remote -v</code></pre>
-    <p>Mostra os links configurados para <code>fetch</code> (buscar) e <code>push</code> (enviar).</p>
+    <pre>
+      Mostra os links configurados para <code>fetch</code> (buscar) e <code>push</code> (enviar).
+    </pre>
+    <div class="code-box">
+      <button class="copy-btn">📋 Copiar</button>
+      <p>git remote -v</p>
+    </div>
 
     <h2>✏️ Renomear um repositório remoto</h2>
-    <pre><code>git remote rename origin upstream</code></pre>
-    <p>Renomeia a conexão remota de <code>origin</code> para <code>upstream</code>.</p>
+    <pre>Renomeia a conexão remota de <code>origin</code> para <code>upstream</code>.</pre>
+    <div class="code-box">
+      <button class="copy-btn">📋 Copiar</button>
+      <p>git remote rename origin upstream</p>
+    </div>
 
     <h2>🗑 Remover um repositório remoto</h2>
-    <pre><code>git remote remove origin</code></pre>
-    <p>Remove a conexão remota chamada <code>origin</code>.</p>
+    <pre>Remove a conexão remota chamada <code>origin</code>.</pre>
+    <div class="code-box">
+      <button class="copy-btn">📋 Copiar</button>
+      <p>git remote remove origin</p>
+    </div>
 
   </main>
-
+  <script src="../script.js"></script>
 </body>
 </html>

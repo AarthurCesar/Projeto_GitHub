@@ -14,29 +14,44 @@
 
   <main>
     <h1>Comando <code class="h1-code">git push</code></h1>
-
-    <p>O comando <code>git push</code> é usado para enviar suas alterações locais (commits) para um repositório remoto, como o GitHub.</p>
+    <h4 class="subtitle">O comando <code>git push</code> é usado para enviar suas alterações locais (commits) para um repositório remoto, como o GitHub.</h4>
+    
 
     <h2>🚀 Enviar commits para o GitHub</h2>
-    <p>Comando mais comum para enviar tudo que você fez localmente:</p>
-    <pre><code>git push origin main</code></pre>
+    <code>Comando mais comum para enviar tudo que você fez localmente:</code>
+     <div class="code-box">
+  <button class="copy-btn">📋 Copiar</button>
+    <p>git push origin main</p>
+     </div>
 
     <ul>
       <li><strong>origin</strong> → o nome do repositório remoto (geralmente padrão)</li>
-      <li><strong>main</strong> → a branch principal (pode ser master ou outra)</li>
+      <li><strong>main</strong> → a branch principal (pode ser master ou outras feature, bugfix, hotfix, release e beta etc...)</li>
     </ul>
 
-    <h2>🔐 Primeira vez usando push?</h2>
-    <p>Você precisa configurar o repositório remoto antes:</p>
-    <pre><code>git remote add origin https://github.com/usuario/repositorio.git</code></pre>
 
-    <p>Se for a primeira vez que está empurrando essa branch, pode ser necessário:</p>
-    <pre><code>git push -u origin main</code></pre>
-    <p>O <code>-u</code> (ou <code>--set-upstream</code>) faz com que o Git lembre para onde empurrar da próxima vez.</p>
+    <h2>🔐 Primeira vez usando push?</h2>
+
+    <pre>Você precisa configurar o repositório remoto antes:</pre>
+    <div class="code-box">
+    <button class="copy-btn">📋 Copiar</button>
+    <p>git remote add origin https://github.com/usuario/repositorio.git</p>
+    </div>
+
+
+    <pre>Se for a primeira vez que está empurrando essa branch, pode ser necessário:</pre>
+     <div class="code-box">
+    <button class="copy-btn">📋 Copiar</button>
+    <p></pre>git push -u origin main</p>
+     </div>
+    <pre>O <code class="code">-u</code> (ou <code class="code">--set-upstream</code>) faz com que o Git lembre para onde empurrar da próxima vez.</pre>
 
     <h2>🧠 Dica</h2>
-    <p>Depois disso, nos próximos pushes, basta:</p>
-    <pre><code>git push</code></pre>
+    <pre>Depois disso, nos próximos pushes, basta:</pre>
+     <div class="code-box">
+    <button class="copy-btn">📋 Copiar</button>
+    <p>git push</p>
+     </div>
 
     <h2>❗ Problemas comuns</h2>
     <ul>
@@ -46,6 +61,6 @@
     </ul>
 
   </main>
-
+<script src="../script.js"></script>
 </body>
 </html>

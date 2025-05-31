@@ -14,6 +14,14 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.05);
         }
+        section {
+            max-width: 800px;
+            margin: auto;
+            background-color: #171a1f;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
 
         h1 {
             text-align: center;
@@ -113,3 +121,40 @@ pre,code {
     color: #0D41CD;
     font-weight: bold;
 }
+
+
+.code-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #2ea44f;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+}
+
+.subtitle {
+    font-style: normal; 
+    color: #fff;  /* cor branca válida */
+}
+
+.subtitle > code, .code {
+    color: #0D41CD;  /* azul aplicado no código */
+}
+
+
+
