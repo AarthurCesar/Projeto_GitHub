@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Git Pull</title>
+  <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" href="flat-design-icon-showing-the-relationshi_Nu5wgfvMSIC_oN5zNbm25A_eKIrFBj1RYGSdt6Syy6n3w-removebg-preview.png" type="image/x-icon">
+
+</head>
+<body>
+
+  <a href="../index.html" class="voltar">← Voltar ao guia principal</a>
+
+  <main>
+    <h1>Comando <code class="h1-code">git pull</code></h1>
+
+    <p>O comando <code>git pull</code> é usado para atualizar seu repositório local com as alterações que estão no repositório remoto (ex: GitHub).</p>
+
+    <h2>📥 Baixar e mesclar alterações</h2>
+    <pre><code>git pull origin main</code></pre>
+
+    <ul>
+      <li><strong>origin</strong> → repositório remoto</li>
+      <li><strong>main</strong> → nome da branch (pode ser master ou outra)</li>
+    </ul>
+
+    <p>Esse comando faz duas coisas:</p>
+    <ol>
+      <li>Baixa as alterações do GitHub</li>
+      <li>Tenta mesclar essas mudanças na sua branch atual</li>
+    </ol>
+
+    <h2>📌 Situações comuns de uso</h2>
+    <ul>
+      <li>Antes de começar a programar</li>
+      <li>Quando alguém fez alterações no GitHub</li>
+      <li>Para garantir que está com a versão mais atualizada</li>
+    </ul>
+
+    <h2>⚠️ Possíveis conflitos</h2>
+    <p>Se você alterou arquivos que também foram alterados no GitHub, pode surgir um conflito. O Git vai pedir que você resolva manualmente antes de continuar.</p>
+
+    <h2>🛠 Exemplo prático</h2>
+    <p>Imagine que alguém fez um commit no GitHub. Para trazer para sua máquina:</p>
+    <pre><code>git pull origin main</code></pre>
+
+    <h2>✔️ Depois de resolver conflitos</h2>
+    <p>Após corrigir os conflitos:</p>
+    <pre><code>git add .</code>
+<code>git commit -m "Resolvi conflitos do pull"</code></pre>
+
+  </main>
+
+</body>
+</html>

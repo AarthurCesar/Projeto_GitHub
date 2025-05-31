@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Git Checkout</title>
+  <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" href="flat-design-icon-showing-the-relationshi_Nu5wgfvMSIC_oN5zNbm25A_eKIrFBj1RYGSdt6Syy6n3w-removebg-preview.png" type="image/x-icon">
+
+</head>
+<body>
+
+  <a href="../index.html" class="voltar">← Voltar ao guia principal</a>
+
+  <main>
+    <h1>Comando <code class="h1-code">git checkout</code></h1>
+
+    <p>O comando <span class="cmd">git checkout</span> é usado principalmente para trocar de branch ou restaurar arquivos em versões anteriores.</p>
+
+    <h2>🔁 Trocar de branch</h2>
+    <pre><code>git checkout nome-da-branch</code></pre>
+    <p>Você muda para a branch especificada. Exemplo:</p>
+    <pre><code>git checkout desenvolvimento</code></pre>
+
+    <h2>🌱 Criar e trocar para uma nova branch</h2>
+    <p>Você pode criar e já entrar nela com o comando:</p>
+    <pre><code>git checkout -b nova-branch</code></pre>
+
+    <h2>⏪ Restaurar arquivo específico</h2>
+    <p>Restaura um arquivo para a última versão confirmada (commit):</p>
+    <pre><code>git checkout -- caminho/do/arquivo</code></pre>
+    <p><strong>Atenção:</strong> Isso apaga mudanças locais nesse arquivo!</p>
+
+    <h2>📌 Alternativa moderna</h2>
+    <p>Hoje, o Git recomenda o uso de:</p>
+    <ul>
+      <li><code>git switch nome-da-branch</code> → para trocar de branch</li>
+      <li><code>git restore arquivo</code> → para restaurar arquivo</li>
+    </ul>
+
+    <h2>⚠️ Dicas importantes</h2>
+    <ul>
+      <li>Salve seu trabalho antes de trocar de branch com <code>git add</code> e <code>git commit</code>.</li>
+      <li>Evite trocar de branch com arquivos modificados não salvos.</li>
+    </ul>
+
+  </main>
+
+</body>
+</html>

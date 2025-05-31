@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Git Merge</title>
+  <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" href="flat-design-icon-showing-the-relationshi_Nu5wgfvMSIC_oN5zNbm25A_eKIrFBj1RYGSdt6Syy6n3w-removebg-preview.png" type="image/x-icon">
+
+</head>
+<body>
+
+  <a href="../index.html" class="voltar">← Voltar ao guia principal</a>
+
+  <main>
+    <h1>Comando <code class="h1-code">git merge</code></h1>
+
+    <p>O comando <span class="cmd">git merge</span> é usado para unir o conteúdo de uma branch com a branch atual.</p>
+
+    <h2>🔀 Exemplo prático</h2>
+    <p>Você está na branch <code>main</code> e quer unir o conteúdo da branch <code>login</code> nela:</p>
+    <pre><code>git checkout main
+git merge login</code></pre>
+
+    <p>Esse comando pega tudo o que foi feito na branch <code>login</code> e aplica na <code>main</code>.</p>
+
+    <h2>⚔️ Conflitos de merge</h2>
+    <p>Se houver arquivos modificados nas duas branches, o Git pode não saber qual versão manter. Isso é um <strong>conflito</strong>.</p>
+
+    <p>Quando isso acontece:</p>
+    <ul>
+      <li>O Git marca o conflito no arquivo</li>
+      <li>Você deve abrir o arquivo e escolher o que manter</li>
+      <li>Depois, finalize com:</li>
+    </ul>
+
+    <pre><code>git add .
+git commit -m "Resolvido conflito do merge"</code></pre>
+
+    <h2>🔁 Merge vs Rebase</h2>
+    <p>O <span class="cmd">merge</span> cria um novo commit com o histórico das duas branches. Já o <code>git rebase</code> reorganiza os commits. Para projetos simples, <code>merge</code> é mais seguro e fácil de entender.</p>
+
+    <h2>✔️ Dica de fluxo comum</h2>
+    <ol>
+      <li>Você está na branch principal (ex: <code>main</code>)</li>
+      <li>Alguém terminou a feature na branch <code>funcionalidade</code></li>
+      <li>Para unir:</li>
+    </ol>
+    <pre><code>git checkout main
+git pull
+git merge funcionalidade</code></pre>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Git Push</title>
+  <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" href="flat-design-icon-showing-the-relationshi_Nu5wgfvMSIC_oN5zNbm25A_eKIrFBj1RYGSdt6Syy6n3w-removebg-preview.png" type="image/x-icon">
+
+</head>
+<body>
+
+  <a href="../index.html" class="voltar">← Voltar ao guia principal</a>
+
+  <main>
+    <h1>Comando <code class="h1-code">git push</code></h1>
+
+    <p>O comando <code>git push</code> é usado para enviar suas alterações locais (commits) para um repositório remoto, como o GitHub.</p>
+
+    <h2>🚀 Enviar commits para o GitHub</h2>
+    <p>Comando mais comum para enviar tudo que você fez localmente:</p>
+    <pre><code>git push origin main</code></pre>
+
+    <ul>
+      <li><strong>origin</strong> → o nome do repositório remoto (geralmente padrão)</li>
+      <li><strong>main</strong> → a branch principal (pode ser master ou outra)</li>
+    </ul>
+
+    <h2>🔐 Primeira vez usando push?</h2>
+    <p>Você precisa configurar o repositório remoto antes:</p>
+    <pre><code>git remote add origin https://github.com/usuario/repositorio.git</code></pre>
+
+    <p>Se for a primeira vez que está empurrando essa branch, pode ser necessário:</p>
+    <pre><code>git push -u origin main</code></pre>
+    <p>O <code>-u</code> (ou <code>--set-upstream</code>) faz com que o Git lembre para onde empurrar da próxima vez.</p>
+
+    <h2>🧠 Dica</h2>
+    <p>Depois disso, nos próximos pushes, basta:</p>
+    <pre><code>git push</code></pre>
+
+    <h2>❗ Problemas comuns</h2>
+    <ul>
+      <li><strong>Erro de autenticação</strong>: confirme se está logado com SSH ou token.</li>
+      <li><strong>Branch divergente</strong>: pode exigir um <code>git pull</code> antes.</li>
+      <li><strong>Branch inexistente</strong>: verifique se você digitou corretamente o nome da branch.</li>
+    </ul>
+
+  </main>
+
+</body>
+</html>

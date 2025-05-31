@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="flat-design-icon-showing-the-relationshi_Nu5wgfvMSIC_oN5zNbm25A_eKIrFBj1RYGSdt6Syy6n3w-removebg-preview.png" type="image/x-icon">
+    <title>Projeto Git</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  <main>
+      <header>
+        <nav>
+    <!-- Simples -->
+    
+        <div class="simples">
+            <a href="#config">git config</a>
+            <a href="#init">git init</a>
+            <a href="#status">git status</a>
+            <a href="#add">git add</a>
+            <a href="#commit">git commit</a>
+            <a href="#clone">git clone</a>
+        </div>
+
+    <!-- Complexos -->
+    <div class="complexo">
+        <a href="Paginas/remote.html">git remote</a>
+        <a href="Paginas/push.html">git push</a>
+        <a href="Paginas/pull.html">git pull</a>
+        <a href="Paginas/branch.html">git branch</a>
+        <a href="Paginas/checkout.html">git checkout</a>
+        <a href="Paginas/merge.html">git merge</a>
+    </div>
+    </nav>
+  </header>
+    <h1>Comandos Básicos para GitHub</h1>
+
+    <h2 id="config">1 - git config</h2>
+    <h4>Define seu nome e e-mail como autor dos commits.</h4>
+    <p>git config --global user.name "Seu Nome"</p>
+    <p>git config --global user.email "seu@email.com"</p>
+
+    <h2 id="init">2 - git init</h2>
+    <h4>Cria um novo repositório Git na pasta atual.</h4>
+    <p>git init</p>
+
+    <h2 id="status">3 - git status</h2>
+    <h4>Mostra quais arquivos foram modificados ou adicionados desde o último commit.</h4>
+    <p>git status</p>
+
+    <h2 id="add">4 - git add</h2>
+    <h3>Adicionar um arquivo específico</h3>
+    <h4>Prepara o arquivo para ser incluído no próximo commit.</h4>
+    <p>git add nome_do_arquivo</p>
+
+    <h3>Adicionar todos os arquivos</h3>
+    <h4>Adiciona todos os arquivos modificados para o commit.</h4>
+    <p>git add .</p>
+
+    <h2 id="commit">5 - git commit</h2>
+    <h4>Salva uma versão do projeto com uma mensagem explicando as mudanças.</h4>
+    <p>git commit -m "mensagem do commit"</p>
+
+    <h2 id="remote">6 - git remote</h2>
+    <h4>Conecta seu projeto local com o repositório do GitHub.</h4>
+    <p>git remote add origin https://github.com/usuario/repositorio.git</p>
+
+    <h2 id="push">7 - git push</h2>
+    <h4>Envia seus commits para o repositório remoto.</h4>
+    <p>git push -u origin main</p>
+
+    <h2 id="pull">8 - git pull</h2>
+    <h4>Baixa e mescla as alterações do repositório remoto com o seu local.</h4>
+    <p>git pull origin main</p>
+
+    <h2 id="clone">9 - git clone</h2>
+    <h4>Clona um repositório remoto para o seu computador.</h4>
+    <p>git clone https://github.com/usuario/repositorio.git</p>
+
+    <h2 id="branch">10 - git branch</h2>
+    <h4>Lista os branches ou cria um novo branch.</h4>
+    <p>git branch</p>
+    <p>git branch nome-do-branch</p>
+
+    <h2 id="checkout">11 - git checkout</h2>
+    <h4>Troca de branch ou restaura arquivos.</h4>
+    <p>git checkout nome-do-branch</p>
+
+    <h2 id="merge">12 - git merge</h2>
+    <h4>Combina as alterações de um branch com outro.</h4>
+    <p>git merge nome-do-branch</p>
+  </main>
+</body>
+</html>
